@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:wght@500&display=swap');
+
+/* Structure */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Adjusting navbar */
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #313131;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+/* Adjusting logo img */
+.logo img {
+   max-width: 100px;
+   height: auto;
+   display: block;
+   margin: 0 auto;
+   color: #ededed;
+}
+/* Navbar Same Position, when Scrolled */
+.navbar{
+    display: fixed;
+    transition: top 0.3s;
+}
+/* Navbar, Text-Styling, Text Placement, Transition */
+.navbar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 150px;
+    padding-right: 50px;
+    transition: all .50s ease;
+}
+/* Text-increase when hover */
+.navbar a:hover{
+    font-size: 18.2px;
+}
+
+/* Navbar placements, content placements */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* Text placement */
+.navbar a {
+    margin-left: 0; /*må fikse for mindre skjermer*/
+}
+
+
+/* Index */
+
+.indextitle{ /* Background-image */
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../images/forside.jpg); /* https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.oslomet.no%2Fen%2Fabout%2Fkjeller-campus&psig=AOvVaw3JhxQVrJEcwKteNS868h4O&ust=1700672023828000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJijxJHH1YIDFQAAAAAdAAAAABAE - Oslomet.no*/
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 800px;    
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-attachment: fixed;
+      color: white;
+      max-width: 100%;
+  }
+
+  .indextitle p{ /* Text on background image */
+    color: papayawhip;
+    padding-left: 17.5%;
+    padding-right: 17.5%;
+    padding-top: 2%;
+  }
+
+  .index-box { /* Styling for each of the boxes in index */
+    border-radius: 10px;
+    border: solid 2px black;
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.introduction{ /* Grid for the boxes */
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.introduction img{
+    max-width: 100%;
+}
+
+.introduction a{
+    text-decoration: none;
+    color: #313131;
+}
+
+.introduction a:hover{
+    color: darkgray;
+}
+
+/* Accesibility*/
+
+.acc-title{ /* Background image in accesibility */
+    background-image: url("https://i.pinimg.com/originals/41/82/a9/4182a9dd330c6442c4a1fbc78274d838.png"); /* Owner pinimg.com*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-attachment: fixed;
+    max-width: 100%;
+    margin-bottom: 5%;
+}
+
+
+.acc-title h1 { /* Title on background image */
+    position: absolute; 
+    bottom: 98x; 
+    left: 20px; 
+    margin: 0; 
+    padding: 20px 40px; 
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 2em; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    background-color: black; 
+    border: solid 3px white; 
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.acc-grid{ /* Grid display */
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+    margin: 20px;
+    text-align: center;
+}
+
+.acc-box{ /* Styling for the boxes */
+    max-width: 100%;
+    border: solid 3px #313131;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 20px 10px 10px darkgrey;
+    margin: 20px;
+
+}
+
+.acc-box img {
+    max-width: 100%;
+}
+
+/* Topic */
+
+.topictitle{ /* Background image in topic */
+  background-image: url(../images/dna.jpg); /* https://wall.alphacoders.com/big.php?i=482896 by AlphaEdifice6083*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    color: white;
+    max-width: 100%;
+}
+
+.topictext{ /* Text on background image */
+    text-align: center;
+    background-color: white;
+    padding: 50px;
+    border: solid 5px #313131;
+    margin: 50px;
+    box-shadow: 7.5px 2.5px 5px #002B32;
+}
+
+.box { /* Styling for boxes in grid */
+    background-color: #002B32;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 7.5px 2.5px 5px papayawhip;
+
+}
+
+.topicgrid { /* Giving in a grid structure */
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 50% 50%;
+    padding: 40px;
+}
+
+.topicgrid img{ /* Image scaling */
+    max-width: 100%;
+}
+
+.topicgrid h1{
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+}
+
+.topicgrid p{
+    color: papayawhip;
+}
+
+.topicgrid a{
+    color: white;
+    margin: 0;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/*place1 */
+
+#plassering-bilde { /* Image scaling */
+    width: 100%; 
+    text-align: center; 
+    color: white;
+}
+
+#plassering-bilde h1{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+}
+
+#plassering-bilde img { /* Image Styling */
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 100%; 
+}
+.main-content { /* Grid display with one in each row */
+    display: grid; 
+    margin-top: 2%;
+    grid-template-columns: 100%;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+.main-content p {
+    color: grey;
+}
+
+.main-content img{ /* Scaling img */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 85%;
+    height: auto;
+    align-items: center;
+}
+
+.item{ /* Scaling each item in place */
+    background-color: transparent;
+    margin-top: 10%;
+    padding: 20px;
+
+}
+
+.placetitle{ /* Background image */
+  background-image: url("https://www.eurosign.no/img/Prosjekter/OsloMET/_large/OsloMET-EuroSign-skilt-med-lys-skilt-uten-lys-folie-8.jpg"); /* Owner eurosign - eurosign.no*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-attachment: fixed;
+    max-width: 100%;
+    margin-bottom: 5%;
+}
+
+.placetitle h1 { /* Background image text */
+    position: absolute; 
+    bottom: 98x; 
+    left: 20px; 
+    margin: 0; 
+    padding: 20px 40px; 
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 2em; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    background-color: black; 
+    border: none; 
+    border-radius: 5px;
+}
+
+.placetitle h1:before { /* White Vertical Line Image Text*/
+    content: '';
+    position: absolute;
+    left: 10px; 
+    top: 10px; 
+    bottom: 10px; 
+    width: 2px; 
+    background-color: white; 
+}
+
+.segment { /*Styling the text that comes after background*/
+    text-align: center;
+    padding: 50px;
+    margin-left: 20%;  
+    margin-right: 20%; 
+}
+
+.segment p{
+    color: black;
+}
+
+#cafeteria-text {/* Cafeteriatextbox styling */
+    background-color: white; 
+    padding: 25px; 
+    margin: 10px 0; 
+    border-radius: 5px;
+    width: 60%;
+    margin-left: 0%; 
+    margin-right: 50%; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    float: left; /* Add this line to make the element float to the left */
+}
+
+#samfunnet-text {/* Samfunnettextbox styling */
+    background-color: white; 
+    padding: 25px; 
+    margin: 10px 0; 
+    border-radius: 5px; 
+    width: 60%;
+    margin-left: 50%; /* Change the margin-left to 50% */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    float: right; /* Add this line to make the element float to the right */
+}
+
+#reading-text {/* Readingtextbox styling */
+    background-color: white; 
+    padding: 25px; 
+    margin: 10px 0; 
+    border-radius: 5px; 
+    width: 60%;
+    margin-left: 0%; 
+    margin-right: 50%; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    float: left; /* Add this line to make the element float to the left */
+}
+#opening-hours {
+    text-align: center;
+}
+
+table { /* Table for opening hours styling */
+    border-collapse: collapse;
+    width: 50%; /* Set the width of the table */
+    margin: 20px auto; /* Center the table on the page */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Footer*/
+
+footer { /* Footer background */
+    background-color: #313131;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-grid { /* Footer styling */
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 10%;
+}
+
+.footer-grid a { /* White, no Underlines */
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-grid h2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-grid a:hover h2 {
+    color: #a8a8a8;
+}
+
+.footer-grid h2::before { /* Dot before h2 elements*/
+    content: "\00B7";
+    color: white;
+    margin-right: 10px;
+}
+
+/* Media query for mindre skjermer */
+
+@media (max-width: 768px) {
+  .navbar { /* Downwards navbar in small screens styling */
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar a{
+    padding: 5px;
+    font-size: 18px;
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .acc-title h1{
+    font-size: 18px;
+  }
+  .topicgrid{
+    grid-template-columns: 100%;
+  }
+  .main-content {
+    display: block;
+    grid-template-columns: 1fr; /* Grid styling that has one box in each row on small screen */
+    text-align: center;
+  }
+  .placetitle h1{
+    font-size: 18px;
+  }
+
+  .item img{
+    max-width: 140%;
+    margin-left: -20%;
+  }
+  #reading-text{
+    margin-left: 20%;
+    margin-right: 30%;
+    
+  }
+  #opening-hours{
+    margin-top: 300px;
+  }
+  .introduction{
+    grid-template-columns: 1fr; /* Grid styling that has one box in each row on small screen */
+  }
+  .acc-grid{
+    grid-template-columns: 1fr; /* Grid styling that has one box in each row on small screen */
+  }
+  .footer-grid{
+    display: block;
+  }
+  
+
+}
+
+@media(max-width: 512px){
+    .item img{ /*Adjusting the styling in place/campus so it does not get messy when it is for super small screens like iphone 14 pro*/
+        margin-left: 40%;
+        margin-right: 60%;
+    }
+    
+    #cafeteria-text{
+        margin-left: 20%;
+        padding: 10px;
+        margin-bottom: 50px;
+        margin-right: 30%;
+        font-size: 10px;
+    }
+
+    #samfunnet-text{
+        margin-left: 20%;
+        padding: 10px;
+        margin-bottom: 50px;
+        margin-right: 20%;
+        font-size: 10px;
+    }
+
+    #reading-text{
+        margin-left: 20%;
+        padding: 10px;
+        margin-bottom: 20px;
+        margin-right: 30%;
+        font-size: 10px;
+      }
+}
+
+
+@media (max-width: 1024px) { /*Making the image scaling look more responsive*/
+    .item img{
+        max-width: 140%;
+        margin-left: -20%;
+      }}
+
+
+
+
+
+
+
+
+
+
