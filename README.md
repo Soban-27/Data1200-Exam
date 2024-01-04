@@ -1,2 +1,1 @@
-#Ting å fikse:
-- Ferdig
+Assignment - Exam in DATA1200
